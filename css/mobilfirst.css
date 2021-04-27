@@ -1,0 +1,20 @@
+/* CSS Document */
+
+
+/*  Projet P3  - 20/04/2021 */
+
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("polices/Roboto/Roboto-Regular.ttf");
+}
+
+
+body {
+backround: #000;
+}
