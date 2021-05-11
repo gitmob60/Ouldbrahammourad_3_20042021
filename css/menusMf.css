@@ -1,0 +1,125 @@
+/* SCSS Document */
+/* SCSS Document */
+@font-face {
+  font-family: "Roboto";
+  src: url("./polices/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  color: #000000;
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify_content: center;
+  background-color: white;
+}
+header .flecheRetour {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  margin: 15px;
+}
+
+.logoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  background-color: white;
+}
+.logoHeader img {
+  width: auto;
+  height: 32px;
+}
+
+footer {
+  background-color: #353535;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 25px 25px 35px 25px;
+}
+footer .titreFooter {
+  font-family: "Shrikhand";
+  color: white;
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-left: 40px;
+}
+footer .navigation {
+  list-style-type: none;
+}
+footer .navigation li {
+  color: white;
+  margin-bottom: 5px;
+}
+footer .navigation li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+footer .navigation li a .fas {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.pageMmenu {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+}
+.pageMmenu .platPhoto {
+  width: auto;
+  z-index: -1;
+}
+.pageMmenu .platPhoto img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.unRestaurant {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  border-top-right-radius: 6%;
+  border-top-left-radius: 6%;
+  margin-top: -35px;
+  background-color: #F6F6F6;
+}
+.unRestaurant .libelle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+.unRestaurant .libelle texte {
+  font-size: 40px;
+  fopnt-style: italic;
+}
+.unRestaurant .libelle .far {
+  margin-left: 10%;
+}
+.unRestaurant .libelle .far .fa-heart {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=menusMf.css.map */

@@ -1,0 +1,92 @@
+﻿/* SCSS Document */
+
+$couleurPrimaire: #9356DC;
+
+$couleurSecondaire: #FF79DA;
+
+$couleurTertiaire: #99E2D0;
+
+$fondGris: #F6F6F6;
+
+$fondAnthracite: #353535;
+
+$vertClair: #99E2D0;
+
+$vertFonce: #278870;;
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./polices/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
+}
+
+$policeLogo : "Shrikhand";
+
+$policeTexte : "Roboto";
+
+
+
+body {
+    font-family: $policeTexte, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    color: #000000;
+    background-color: $fondGris;
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: center;   
+    align-items: center;     
+    width: 100%;
+    height: 62px;    
+    background-color: #FFFFFF;  
+    img {
+      width: auto;
+      height: 32px;
+    }
+}
+
+
+footer {
+    background-color: $fondAnthracite;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 25px 25px 35px 25px;
+    .titreFooter {
+        font-family: $policeLogo;
+        color: white;
+        font-style: italic;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .navigation {
+        list-style-type: none;        
+        li {
+            color: white;
+            margin-bottom: 5px;
+            a {
+                display: block;
+                text-decoration: none; 
+                color: white; 
+                .fas {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 12px;
+                }        
+            }
+        }       
+        
+     }
+}
+
