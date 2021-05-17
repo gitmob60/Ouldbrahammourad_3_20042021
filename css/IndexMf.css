@@ -1,12 +1,13 @@
-/* SCSS Document */
+/* CSS Document */
 @font-face {
   font-family: "Roboto";
-  src: url("./polices/Roboto/Roboto-Regular.ttf");
+  src: url("../polices/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
 }
+/* SCSS Document */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -19,7 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify_content: center;
+  justify-content: center;
   background-color: white;
 }
 header .flecheRetour {
@@ -27,6 +28,12 @@ header .flecheRetour {
   width: 40px;
   background-color: white;
   margin: 15px;
+}
+header .flecheRetour a {
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+  color: black;
 }
 
 .logoHeader {
@@ -84,6 +91,9 @@ footer .navigation li a .fas {
   justify-content: center;
   background-color: #F6F6F6;
 }
+#description h2 {
+  display: none;
+}
 #description .localisation {
   height: 50px;
   font-size: 17px;
@@ -117,10 +127,9 @@ footer .navigation li a .fas {
   text-decoration: none;
 }
 #description #lienRestaurants .boutonRestaurants {
-  align-items: center;
-  justify-content: center;
+  padding-top: 15px;
   width: 200px;
-  height: 40px;
+  height: 38px;
   text-align: center;
   color: white;
   border-radius: 40px;
@@ -167,6 +176,8 @@ footer .navigation li a .fas {
 }
 #fonctionnement #blocFonctionnement .ligneFonctionnement .pastille .numero {
   justify-content: center;
+  position: relative;
+  top: 6px;
 }
 #fonctionnement #blocFonctionnement .ligneFonctionnement .fas {
   width: 30px;
@@ -185,7 +196,6 @@ footer .navigation li a .fas {
 #restaurants #titreRestaurants {
   align-self: start;
   margin-left: 20%;
-  margin-bottom: 50px;
 }
 #restaurants a {
   text-decoration: none;
@@ -196,16 +206,16 @@ footer .navigation li a .fas {
   Border-radius: 5%;
   align-items: center;
   z-index: 2;
+  position: relative;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 #restaurants a .unRestaurant .info {
   background-color: #99E2D0;
   color: #278870;
   z-index: 2;
-  position: relative;
-  margin-bottom: -15%;
-  margin-left: 70%;
-  margin-right: 5%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   padding: 3px;
 }
 #restaurants a .unRestaurant .platPhoto {
@@ -240,7 +250,6 @@ footer .navigation li a .fas {
   color: gray;
 }
 #restaurants a .unRestaurant .cartouche .far {
-  align-self: right;
   margin-right: 20px;
 }
 

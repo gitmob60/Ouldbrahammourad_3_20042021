@@ -1,13 +1,14 @@
 /* SCSS Document */
-/* SCSS Document */
+/* CSS Document */
 @font-face {
   font-family: "Roboto";
-  src: url("./polices/Roboto/Roboto-Regular.ttf");
+  src: url("../polices/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
 }
+/* SCSS Document */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -20,7 +21,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify_content: center;
+  justify-content: center;
   background-color: white;
 }
 header .flecheRetour {
@@ -28,6 +29,12 @@ header .flecheRetour {
   width: 40px;
   background-color: white;
   margin: 15px;
+}
+header .flecheRetour a {
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+  color: black;
 }
 
 .logoHeader {
@@ -99,8 +106,7 @@ footer .navigation li a .fas {
   display: flex;
   flex-direction: column;
   z-index: 0;
-  border-top-right-radius: 6%;
-  border-top-left-radius: 6%;
+  border-radius: 40px 40px 0 0;
   margin-top: -35px;
   background-color: #F6F6F6;
 }
@@ -109,17 +115,85 @@ footer .navigation li a .fas {
   flex-direction: row;
   align-items: center;
   margin-left: 20px;
-}
-.unRestaurant .libelle texte {
-  font-size: 40px;
-  fopnt-style: italic;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 .unRestaurant .libelle .far {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 .unRestaurant .libelle .far .fa-heart {
   width: 40px;
   height: 40px;
+}
+.unRestaurant .service .nomService {
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.unRestaurant .service .souligne {
+  color: #99E2D0;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.unRestaurant .service .blocPlats {
+  border-radius: 6%;
+  margin-bottom: 30px;
+}
+.unRestaurant .service .blocPlats .plat {
+  background-color: white;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.unRestaurant .service .blocPlats .plat .platLib {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.unRestaurant .service .blocPlats .plat .platLib .platLib1 {
+  font-weight: bold;
+}
+.unRestaurant .service .blocPlats .plat .platLib .platLib2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.unRestaurant .service .blocPlats .plat .platLib .platLib2 .platLib21 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 84%;
+}
+.unRestaurant .service .blocPlats .plat .platLib .platLib2 .platLib22 {
+  width: 10%;
+  font-weight: bold;
+}
+.unRestaurant .service .blocPlats .plat .platChoisi {
+  display: none;
+}
+
+.blocBouton {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.blocBouton .bouton {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(180deg, #FF79DA 15%, #9356DC 90%);
+  border-style: none;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=menusMf.css.map */

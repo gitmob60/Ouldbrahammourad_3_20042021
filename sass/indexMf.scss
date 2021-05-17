@@ -1,10 +1,14 @@
-@import 'generique2Mf';
+@import 'conf';
+@import 'generiqueMf';
 
 #description {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $fondGris;    
+    background-color: $fondGris;  
+    h2 {
+        display: none;
+    }    
     .localisation {
     height: 50px; 
     font-size: 17px;
@@ -36,11 +40,10 @@
       display: flex;
       justify-content: center;
       text-decoration: none;
-         .boutonRestaurants {        
-            align-items: center;
-            justify-content: center;
+      .boutonRestaurants { 
+            padding-top: 15px;   
             width: 200px;
-            height: 40px;
+            height: 38px;
             text-align: center;
             color: white;
             border-radius: 40px;
@@ -49,7 +52,7 @@
             box-shadow: 0 10px 20px 0 rgb(0 0 0 / 50%);  
             margin-bottom: 30px;
         }
-    }
+     }
  }
 
 #fonctionnement {
@@ -76,6 +79,7 @@
             background: $fondGris;
             box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
             margin-bottom: 20px;
+   
             .pastille {
                 text-align: center;
                 height: 30px;
@@ -87,8 +91,9 @@
                 background-color: $couleurPrimaire;
                 .numero {
                     justify-content: center;
-                }
-         
+                    position: relative;
+                    top: 6px;
+                }           
             }
             .fas {
                 width: 30px;
@@ -96,7 +101,8 @@
                 margin-right: 30px;
                 color: gray;
             }
-        }
+          }
+   
     }
 }
 
@@ -109,26 +115,24 @@
     #titreRestaurants {
         align-self: start;
         margin-left: 20%;
-        margin-bottom: 50px;
     }
     a {
         text-decoration: none;
         color: black;
-         
         .unRestaurant  {
             width: 100%;
             Border-radius: 5%;
             align-items: center;
             z-index: 2;
-             box-shadow: 0 10px 20px 0 rgb(0 0 0 / 50%);
+            position: relative;
+            box-shadow: 0 10px 20px 0 rgb(0 0 0 / 50%);
             .info {
-                background-color: $vertClair;
-                color: $vertFonce;
+                background-color: $couleurFondInfo;
+                color: $couleurInfo;
                 z-index: 2;
-                position: relative;
-                margin-bottom: -15%;
-                margin-left: 70%;
-                margin-right: 5%; 
+                position: absolute;
+                top: 10px;
+                right: 10px;
                 padding: 3px;                   
             }  
             .platPhoto {
@@ -162,7 +166,6 @@
                     }
                 } 
                 .far {
-                    align-self: right;
                     margin-right: 20px;
                 }
             }          

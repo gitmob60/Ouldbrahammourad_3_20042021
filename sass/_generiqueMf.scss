@@ -1,36 +1,5 @@
 ﻿/* SCSS Document */
 
-$couleurPrimaire: #9356DC;
-
-$couleurSecondaire: #FF79DA;
-
-$couleurTertiaire: #99E2D0;
-
-$fondGris: #F6F6F6;
-
-$fondAnthracite: #353535;
-
-$vertClair: #99E2D0;
-
-$vertFonce: #278870;;
-
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./polices/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
-}
-
-$policeLogo : "Shrikhand";
-
-$policeTexte : "Roboto";
-
-
-
 body {
     font-family: $policeTexte, sans-serif;
     font-size: 16px;
@@ -39,13 +8,34 @@ body {
     background-color: $fondGris;
 }
 
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  .flecheRetour {
+    height: 40px;
+    width: 40px;
+    background-color: white;  
+    margin: 15px;
+    a {
+        text-decoration: none;
+        position: relative;
+        top: 10px;
+        color: black;
+    }
+  }
+}
+
 .logoHeader {
     display: flex;
     justify-content: center;   
     align-items: center;     
     width: 100%;
     height: 62px;    
-    background-color: #FFFFFF;  
+    background-color: white;  
     img {
       width: auto;
       height: 32px;
