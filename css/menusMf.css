@@ -44,6 +44,7 @@ header .flecheRetour a {
   width: 100%;
   height: 62px;
   background-color: white;
+  margin-right: 7%;
 }
 .logoHeader img {
   width: auto;
@@ -58,7 +59,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 25px 25px 35px 25px;
+  padding: 25px 25px 35px 2px;
 }
 footer .titreFooter {
   font-family: "Shrikhand";
@@ -120,6 +121,9 @@ footer .navigation li a .fas {
   font-style: italic;
   font-weight: bold;
 }
+.unRestaurant .libelle .texte h3 {
+  font-weight: 400;
+}
 .unRestaurant .libelle .far {
   margin-left: 20%;
 }
@@ -130,12 +134,12 @@ footer .navigation li a .fas {
 .unRestaurant .service .nomService {
   font-family: "Roboto", serif;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .unRestaurant .service .souligne {
   color: #99E2D0;
   margin-top: -10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .unRestaurant .service .blocPlats {
   border-radius: 6%;
@@ -148,7 +152,7 @@ footer .navigation li a .fas {
   flex-direction: row;
   padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .unRestaurant .service .blocPlats .plat .platLib {
   display: flex;
