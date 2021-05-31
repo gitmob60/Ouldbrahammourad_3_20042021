@@ -1,4 +1,5 @@
 /* CSS Document */
+/* CSS Document */
 @font-face {
   font-family: "Roboto";
   src: url("../polices/Roboto/Roboto-Regular.ttf");
@@ -12,6 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: auto;
+  width: 75%;
   color: #000000;
   background-color: #F6F6F6;
 }
@@ -56,9 +58,9 @@ footer {
   font-size: 16px;
   font-weight: 200;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 25px 25px 35px 2px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
 }
 footer .titreFooter {
   font-family: "Shrikhand";
@@ -66,14 +68,18 @@ footer .titreFooter {
   font-style: italic;
   margin-bottom: 0;
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: -50px;
 }
 footer .navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
   list-style-type: none;
 }
 footer .navigation li {
   color: white;
   margin-bottom: 5px;
+  margin-right: 40px;
 }
 footer .navigation li a {
   display: block;
@@ -122,11 +128,6 @@ footer .navigation li a .fas {
 #description .decouvrir {
   font-size: 20px;
 }
-@media (max-width: 329px) {
-  #description .decouvrir {
-    font-size: 16px;
-  }
-}
 #description #lienRestaurants {
   display: flex;
   justify-content: center;
@@ -153,15 +154,17 @@ footer .navigation li a .fas {
   width: auto;
 }
 #fonctionnement h2 {
-  margin-left: 20px;
+  align-self: center;
 }
 #fonctionnement #blocFonctionnement {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: space-around;
 }
 #fonctionnement #blocFonctionnement .ligneFonctionnement {
+  margin-lef: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,32 +201,26 @@ footer .navigation li a .fas {
   margin-right: 30px;
   color: gray;
 }
-@media (max-width: 329px) {
-  #fonctionnement #blocFonctionnement .ligneFonctionnement {
-    width: 250px;
-    font-size: 14px;
-  }
-  #fonctionnement #blocFonctionnement .ligneFonctionnement .fas {
-    margin-right: 20px;
-  }
-}
 
 #restaurants {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
 }
 #restaurants h2 {
-  align-self: start;
-  margin-left: 20px;
+  margin-left: 43%;
+  width: 100%;
+  align-self: center;
   margin-top: 35px;
   margin-bottom: -10px;
 }
 #restaurants a {
   text-decoration: none;
   color: black;
+  margin-right: 30px;
 }
 #restaurants a .unRestaurant {
   width: 100%;
@@ -255,13 +252,6 @@ footer .navigation li a .fas {
   object-fit: cover;
   z-index: 1;
 }
-@media (max-width: 329px) {
-  #restaurants a .unRestaurant .platPhoto img {
-    height: 200px;
-    min-width: 270px;
-    width: 270px;
-  }
-}
 #restaurants a .unRestaurant .cartouche {
   display: flex;
   flex-direction: row;
@@ -286,4 +276,4 @@ footer .navigation li a .fas {
   margin-right: 20px;
 }
 
-/*# sourceMappingURL=indexMf.css.map */
+/*# sourceMappingURL=style.css.map */

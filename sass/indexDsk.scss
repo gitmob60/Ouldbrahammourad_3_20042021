@@ -1,5 +1,7 @@
+﻿/* CSS Document */
+
 @import 'conf';
-@import 'generiqueMf';
+@import 'generiqueDsk';
 
 #description {
     display: flex;
@@ -36,11 +38,7 @@
     .decouvrir {
         font-size: 20px;
     }
-     @media (max-width: 329px) {
-        .decouvrir {             
-            font-size: 16px;
-         } 
-    }              
+  
     #lienRestaurants {
       display: flex;
       justify-content: center;
@@ -62,22 +60,23 @@
 
 #fonctionnement {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;;
     padding: 10px;
     background-color: white;
     width: auto;
     h2 {
-        margin-left: 20px;
+        align-self:center;
      }
     
     
     #blocFonctionnement {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-bottom: 20px;
-                        
+        justify-content: space-around;                
         .ligneFonctionnement {
+            margin-lef: 20px;
             &:hover {
               background-color: $couleurSurvol;
               .fas {
@@ -113,37 +112,30 @@
                   margin-right: 30px;
                   color: gray;
               }                       
-          } 
-          @media (max-width: 329px) {
-              .ligneFonctionnement { 
-                  width: 250px;            
-                  font-size: 14px;
-                  .fas {
-                    margin-right: 20px;
-                  }
-               } 
-           }         
-              
+          }                  
     }  
 }
 
 #restaurants {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: $fondGris;
     h2 {
-        align-self: start;
-        margin-left: 20px;
+        margin-left:43%;
+        width: 100%;
+        align-self:center;
         margin-top: 35px;
         margin-bottom: -10px;
     }
     a {
         text-decoration: none;
         color: black;
+        margin-right: 30px;
         .unRestaurant  {
-            width: 100%;
+            width: 100%; 
             Border-radius: 5%;
             align-items: center;
             z-index: 2;
@@ -170,14 +162,7 @@
                     object-fit: cover;
                     z-index: 1;
                 } 
-                @media (max-width: 329px) {
-                  img {             
-                      height: 200px;
-                      min-width: 270px;
-                      width: 270px; 
-                  } 
-                }                   
-            }                       
+             }                       
             .cartouche {
                 display: flex;
                 flex-direction: row;
@@ -204,6 +189,4 @@
         }
     }
 }
-
-
 
