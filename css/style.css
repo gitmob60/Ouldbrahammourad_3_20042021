@@ -92,16 +92,90 @@ footer .navigation li a .fas {
   margin-right: 12px;
 }
 
-#description {
+.loader {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  paddind: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 0;
+  background-color: #16a085;
+  line-height: 500px;
+  visibility: hidden;
+  transition: visibility 3s;
+  opacity: 0.5;
+}
+.loader .loaderQdc {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+.loader .loaderQdc:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  animation: load 1s linear 0s infinite;
+  -webkit-animation: load 1s linear infinite;
+}
+
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.principale {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.5;
+  visibility: visible;
+  transition: visibility 3s;
+}
+.principale #description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
 }
-#description h1 {
+.principale #description h1 {
   display: none;
 }
-#description .localisation {
+.principale #description .localisation {
   height: 50px;
   font-size: 17px;
   display: flex;
@@ -111,29 +185,29 @@ footer .navigation li a .fas {
   background-color: #EAEAEA;
   box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
-#description .localisation .fa-map-marker-alt {
+.principale #description .localisation .fa-map-marker-alt {
   margin-right: 15px;
 }
-#description .reserver, #description .decouvrir {
+.principale #description .reserver, .principale #description .decouvrir {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#description .reserver {
+.principale #description .reserver {
   font-size: 21px;
   font-weight: bold;
   margin-top: 30px;
 }
-#description .decouvrir {
+.principale #description .decouvrir {
   font-size: 20px;
 }
-#description #lienRestaurants {
+.principale #description #lienRestaurants {
   display: flex;
   justify-content: center;
   text-decoration: none;
 }
-#description #lienRestaurants .boutonRestaurants {
+.principale #description #lienRestaurants .boutonRestaurants {
   padding-top: 15px;
   width: 200px;
   height: 38px;
@@ -145,25 +219,24 @@ footer .navigation li a .fas {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
-
-#fonctionnement {
+.principale #fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 10px;
   background-color: white;
   width: auto;
 }
-#fonctionnement h2 {
+.principale #fonctionnement h2 {
   align-self: center;
 }
-#fonctionnement #blocFonctionnement {
+.principale #fonctionnement #blocFonctionnement {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-around;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement {
   margin-lef: 20px;
   display: flex;
   flex-direction: row;
@@ -176,13 +249,13 @@ footer .navigation li a .fas {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement:hover {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement:hover {
   background-color: #f2eafb;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement:hover .fas {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement:hover .fas {
   color: #9356DC;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement .pastille {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement .pastille {
   text-align: center;
   height: 30px;
   width: 30px;
@@ -192,17 +265,16 @@ footer .navigation li a .fas {
   color: white;
   background-color: #9356DC;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement .pastille .numero {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement .pastille .numero {
   justify-content: center;
   position: relative;
   top: 6px;
 }
-#fonctionnement #blocFonctionnement .ligneFonctionnement .fas {
+.principale #fonctionnement #blocFonctionnement .ligneFonctionnement .fas {
   margin-right: 30px;
   color: gray;
 }
-
-#restaurants {
+.principale #restaurants {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,19 +282,19 @@ footer .navigation li a .fas {
   align-items: center;
   background-color: #F6F6F6;
 }
-#restaurants h2 {
+.principale #restaurants h2 {
   margin-left: 43%;
   width: 100%;
   align-self: center;
   margin-top: 35px;
   margin-bottom: -10px;
 }
-#restaurants a {
+.principale #restaurants a {
   text-decoration: none;
   color: black;
   margin-right: 30px;
 }
-#restaurants a .unRestaurant {
+.principale #restaurants a .unRestaurant {
   width: 100%;
   Border-radius: 5%;
   align-items: center;
@@ -230,7 +302,7 @@ footer .navigation li a .fas {
   position: relative;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
-#restaurants a .unRestaurant .info {
+.principale #restaurants a .unRestaurant .info {
   background-color: #99E2D0;
   color: #278870;
   z-index: 2;
@@ -240,11 +312,11 @@ footer .navigation li a .fas {
   font-weight: 500;
   padding: 8px 8px 10px 10px;
 }
-#restaurants a .unRestaurant .platPhoto {
+.principale #restaurants a .unRestaurant .platPhoto {
   Border-radius: 5%;
   margin-top: 35px;
 }
-#restaurants a .unRestaurant .platPhoto img {
+.principale #restaurants a .unRestaurant .platPhoto img {
   height: 230px;
   min-width: 350px;
   border-top-right-radius: 5%;
@@ -252,27 +324,27 @@ footer .navigation li a .fas {
   object-fit: cover;
   z-index: 1;
 }
-#restaurants a .unRestaurant .cartouche {
+.principale #restaurants a .unRestaurant .cartouche {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-left: 3%;
 }
-#restaurants a .unRestaurant .cartouche .libelle {
+.principale #restaurants a .unRestaurant .cartouche .libelle {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
 }
-#restaurants a .unRestaurant .cartouche .libelle .nom {
+.principale #restaurants a .unRestaurant .cartouche .libelle .nom {
   font-weight: bold;
   margin: 5px;
 }
-#restaurants a .unRestaurant .cartouche .libelle .lieu {
+.principale #restaurants a .unRestaurant .cartouche .libelle .lieu {
   margin: 5px;
   color: gray;
 }
-#restaurants a .unRestaurant .cartouche .far {
+.principale #restaurants a .unRestaurant .cartouche .far {
   margin-right: 20px;
 }
 
