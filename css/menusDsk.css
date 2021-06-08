@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
+}
+/* SCSS Document */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  width: 75%;
+  color: #000000;
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header .flecheRetour {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  margin: 15px;
+}
+header .flecheRetour a {
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+  color: black;
+}
+
+.logoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  background-color: white;
+  margin-right: 7%;
+}
+.logoHeader img {
+  width: auto;
+  height: 32px;
+}
+
+footer {
+  background-color: #353535;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+}
+footer .titreFooter {
+  font-family: "Shrikhand";
+  color: white;
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-left: -50px;
+}
+footer .navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  list-style-type: none;
+}
+footer .navigation li {
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 40px;
+}
+footer .navigation li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+footer .navigation li a .fas {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.pageMmenu {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+}
+.pageMmenu .platPhoto {
+  width: auto;
+}
+.pageMmenu .platPhoto img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.unRestaurant {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 40px 40px 0 0;
+  margin-top: 5px;
+  background-color: #F6F6F6;
+}
+.unRestaurant .libelle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  margin-left: 35%;
+  font-family: "Shrikhand";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+.unRestaurant .libelle .texte h3 {
+  font-weight: 400;
+}
+.unRestaurant .libelle .fas {
+  cursor: pointer;
+  margin-left: 5%;
+}
+.unRestaurant .libelle .fas .fa-heart {
+  width: 40px;
+  height: 40px;
+  transition: 1s;
+  -webkit-text-fill-color: #353535;
+}
+.unRestaurant .libelle .fas .fa-heart:hover fa-heart {
+  -webkit-text-fill-color: #f2eafb;
+}
+.unRestaurant .service {
+  margin-left: 7%;
+}
+.unRestaurant .service .nomService {
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.unRestaurant .service .souligne {
+  color: #99E2D0;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.unRestaurant .service .blocPlats {
+  border-radius: 6%;
+  margin-bottom: 30px;
+}
+.unRestaurant .service .blocPlats .plat {
+  cursor: pointer;
+  background-color: white;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.unRestaurant .service .blocPlats .plat .platLib {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+.unRestaurant .service .blocPlats .plat .platTexte {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.unRestaurant .service .blocPlats .plat .platTexte .platLib1 {
+  font-weight: bold;
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.unRestaurant .service .blocPlats .plat .platTexte .platLib2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.unRestaurant .service .blocPlats .plat .platTexte .platLib2 .platLib21 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 65%;
+}
+.unRestaurant .service .blocPlats .plat .platTexte .platLib2 .platLib22 {
+  width: 10%;
+  font-weight: bold;
+}
+.unRestaurant .service .blocPlats .platChoisi {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-right: -210px;
+  margin-left: 10px;
+  transition-duration: 0.7s;
+}
+.unRestaurant .service .blocPlats .platChoisi .platCoche {
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  color: #99E2D0;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+  justify-content: center;
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+.unRestaurant .plat:hover .platChoisi {
+  margin-right: 0px;
+}
+.unRestaurant .plat:hover .platChoisi .platCoche {
+  transform: rotate(0);
+}
+
+.blocBouton {
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.blocBouton .bouton {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(180deg, #FF79DA 15%, #9356DC 90%);
+  border-style: none;
+  box-shadow: 3px 3px 5px gray;
+  transition: 0.7s;
+}
+.blocBouton .bouton:hover {
+  background: linear-gradient(180deg, #ff93e1 8%, #a16be0 90%);
+  box-shadow: 3px 3px 5px black;
+}
+
+/*# sourceMappingURL=menusDsk.css.map */

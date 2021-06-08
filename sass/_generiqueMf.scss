@@ -1,0 +1,83 @@
+﻿/* SCSS Document */
+
+body {
+    font-family: $policeTexte, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    color: #000000;
+    background-color: $fondGris;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  .flecheRetour {
+    height: 40px;
+    width: 40px;
+    background-color: white;  
+    margin: 15px;
+    a {
+        text-decoration: none;
+        position: relative;
+        top: 10px;
+        color: black;
+    }
+  }
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: center;   
+    align-items: center;     
+    width: 100%;
+    height: 62px;    
+    background-color: white; 
+    margin-right: 7%; 
+    img {
+      width: auto;
+      height: 32px;
+    }
+}
+
+
+footer {
+    background-color: $fondAnthracite;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 25px 25px 35px 2px;
+    .titreFooter {
+        font-family: $policeLogo;
+        color: white;
+        font-style: italic;
+        margin-bottom: 0;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .navigation {
+        list-style-type: none;        
+        li {
+            color: white;
+            margin-bottom: 5px;
+            a {
+                display: block;
+                text-decoration: none; 
+                color: white; 
+                .fas {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 12px;
+                }        
+            }
+        }       
+        
+     }
+}
+
