@@ -366,8 +366,26 @@ footer .navigation li a .fas {
   margin: 5px;
   color: gray;
 }
-#restaurants a .unRestaurant .cartouche .far {
-  margin-right: 20px;
+#restaurants a .unRestaurant .cartouche .coeur {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+#restaurants a .unRestaurant .cartouche .coeur .coeurPlein {
+  display: none;
+  background-image: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+#restaurants a .unRestaurant .cartouche .coeur:hover .coeurVide {
+  display: none;
+}
+#restaurants a .unRestaurant .cartouche .coeur:hover .coeurPlein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=indexDsk.css.map */

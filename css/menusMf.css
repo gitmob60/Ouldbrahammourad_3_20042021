@@ -85,23 +85,26 @@ footer .navigation li a .fas {
   margin-right: 12px;
 }
 
-.pageMmenu {
+body {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+body .pageMmenu {
   display: flex;
   flex-direction: column;
   width: auto;
   justify-content: center;
 }
-.pageMmenu .platPhoto {
+body .pageMmenu .platPhoto {
   width: auto;
   z-index: -1;
 }
-.pageMmenu .platPhoto img {
+body .pageMmenu .platPhoto img {
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
-
-.unRestaurant {
+body .unRestaurant {
   display: flex;
   flex-direction: column;
   z-index: 0;
@@ -109,7 +112,7 @@ footer .navigation li a .fas {
   margin-top: -35px;
   background-color: #F6F6F6;
 }
-.unRestaurant .libelle {
+body .unRestaurant .libelle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -119,37 +122,45 @@ footer .navigation li a .fas {
   font-style: italic;
   font-weight: bold;
 }
-.unRestaurant .libelle .texte h3 {
+body .unRestaurant .libelle .texte h3 {
   font-weight: 400;
 }
-.unRestaurant .libelle .fas {
+body .unRestaurant .libelle .coeur {
+  position: absolute;
+  right: 15px;
   cursor: pointer;
-  margin-left: 5%;
 }
-.unRestaurant .libelle .fas .fa-heart {
-  width: 40px;
-  height: 40px;
-  transition: 1s;
-  -webkit-text-fill-color: #353535;
+body .unRestaurant .libelle .coeur .coeurPlein {
+  display: none;
+  background-image: linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
-.unRestaurant .libelle .fas .fa-heart:hover fa-heart {
-  -webkit-text-fill-color: #f2eafb;
+body .unRestaurant .libelle .coeur:hover .coeurVide {
+  display: none;
 }
-.unRestaurant .service .nomService {
+body .unRestaurant .libelle .coeur:hover .coeurPlein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .unRestaurant .service .nomService {
   font-family: "Roboto", serif;
   text-transform: uppercase;
   margin-left: 20px;
 }
-.unRestaurant .service .souligne {
+body .unRestaurant .service .souligne {
   color: #99E2D0;
   margin-top: -10px;
   margin-left: 20px;
 }
-.unRestaurant .service .blocPlats {
+body .unRestaurant .service .blocPlats {
   border-radius: 6%;
   margin-bottom: 30px;
 }
-.unRestaurant .service .blocPlats .plat {
+body .unRestaurant .service .blocPlats .plat {
   cursor: pointer;
   background-color: white;
   margin: 15px;
@@ -157,10 +168,10 @@ footer .navigation li a .fas {
   flex-direction: row;
   padding: 10px;
   border-radius: 12px;
+  height: 65px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  height: 45px;
 }
-.unRestaurant .service .blocPlats .plat .platLib {
+body .unRestaurant .service .blocPlats .plat .platLib {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -168,20 +179,21 @@ footer .navigation li a .fas {
   overflow: hidden;
   width: 100%;
 }
-.unRestaurant .service .blocPlats .plat .platLib .platTexte {
+body .unRestaurant .service .blocPlats .plat .platLib .platTexte {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 45px;
+  padding: 10px;
 }
-.unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib1 {
+body .unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib1 {
   font-weight: bold;
   width: 65%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 {
+body .unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 {
   display: flex;
   flex-direction: row;
   font-size: 14px;
@@ -190,56 +202,58 @@ footer .navigation li a .fas {
   margin-top: 5px;
   margin-bottom: 3px;
 }
-.unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 .platLib21 {
+body .unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 .platLib21 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 65%;
 }
-.unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 .platLib22 {
+body .unRestaurant .service .blocPlats .plat .platLib .platTexte .platLib2 .platLib22 {
   width: 10%;
   font-weight: bold;
 }
-.unRestaurant .service .blocPlats .plat .platChoisi {
-  width: 65px;
+body .unRestaurant .service .blocPlats .plat .platChoisi {
+  width: 0%;
   height: 65px;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  margin-right: -210px;
-  margin-left: 10px;
   transition-duration: 0.7s;
 }
-.unRestaurant .service .blocPlats .plat .platChoisi .platCoche {
+body .unRestaurant .service .blocPlats .plat .platChoisi .platCoche {
   align-items: center;
   background-color: white;
   border-radius: 100px;
   color: #99E2D0;
   display: flex;
-  height: 45px;
+  height: 25px;
   justify-content: center;
-  width: 45px;
+  width: 25px;
   margin-top: -10px;
   margin-bottom: -10px;
   transform: rotate(180deg);
   transition-duration: 1s;
 }
-.unRestaurant .service .plat:hover .platChoisi {
-  margin-right: 0px;
+body .unRestaurant .service .plat:hover .platChoisi {
+  width: 20%;
+  visibility: visible;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
 }
-.unRestaurant .service .plat:hover .platChoisi .platCoche {
+body .unRestaurant .service .plat:hover .platChoisi .platCoche {
   transform: rotate(0);
 }
-
-.blocBouton {
+body .unRestaurant .service .plat:hover .platChoisi .plat:hover .platTexte {
+  width: 80%;
+}
+body .blocBouton {
   display: flex;
   justify-content: center;
   margin: 10px;
 }
-.blocBouton .bouton {
+body .blocBouton .bouton {
   cursor: pointer;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
@@ -250,7 +264,7 @@ footer .navigation li a .fas {
   box-shadow: 3px 3px 5px gray;
   transition: 0.7s;
 }
-.blocBouton .bouton:hover {
+body .blocBouton .bouton:hover {
   background: linear-gradient(180deg, #ff93e1 8%, #a16be0 90%);
   box-shadow: 3px 3px 5px black;
 }

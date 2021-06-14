@@ -206,9 +206,29 @@
                         color: gray;
                     }
                 } 
-                .far {
-                    margin-right: 20px;
+                .coeur {
+                    position: absolute;
+                    right: 15px;
+                    cursor: pointer;
+                    
+                    .coeurPlein {
+                        display: none;
+                        background-image: linear-gradient(#e66465, #9198e5);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent; 
+                    }
+                    &:hover .coeurVide {
+                        display: none;
+                    }
+                    &:hover .coeurPlein {
+                        display: -webkit-box;                            
+                        display: -ms-flexbox;                            
+                        display: flex;                            
+                    }                        
                 }
+                
             }          
         }
     }
