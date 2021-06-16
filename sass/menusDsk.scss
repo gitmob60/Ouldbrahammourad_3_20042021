@@ -87,6 +87,14 @@
                 border-radius: 12px;
                 height: 65px;
                 box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%); 
+                
+        
+                overflow: hidden;  
+                opacity: 0;             
+                animation: apparition linear 1.2s;
+                opacity: 1;
+
+                
                 .platLib {
                     cursor: pointer;
                     display: flex;
@@ -128,6 +136,7 @@
                             }
                         }
                     }
+            
                 }
                 .platChoisi {
                     width: 0%;
@@ -154,9 +163,41 @@
                         transform: rotate(180deg);
                         transition-duration: 1s;;                    
                     } 
-                }               
+                } 
+                
+                .p1 {
+                animation-delay: 0.2s;
+                }
+                .p2 {
+                    animation-delay: 0.4s;
+                }
+                .p3 {
+                    animation-delay: 0.6s;
+                }
+                .p4 {
+                    animation-delay: 0.8s;
+                }
+                .p5 {
+                    animation-delay: 1s;
+                }
+                .p6 {
+                    animation-delay: 1.2s;
+                }
+                .p7 {
+                    animation-delay: 1.4s;
+                }
+                .p8 {
+                    animation-delay: 1.6s;
+                }
+                .p9 {
+                    animation-delay: 1.8s;
+                } 
+                .p10 {
+                    animation-delay: 2s;
+                }                         
+                
+                }  
             
-            }       
         }        
         .plat:hover  .platChoisi {
             width: 20%;
@@ -166,11 +207,7 @@
             .platCoche {
                 transform: rotate(0);
             }
-        .plat:hover .platTexte {
-                width: 80%;
-            }
-        }        
-    
+        }
     }
     
 
@@ -194,6 +231,12 @@
             box-shadow: 3px 3px 5px black;   
          }  
     }     
+}
+
+
+@keyframes apparition {
+    from { transform: translateY(50px); opacity: 0;}
+    to { transform: translateY(0); opacity: 1;} 
 }
 
 

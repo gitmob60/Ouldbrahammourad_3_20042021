@@ -170,6 +170,10 @@ body .unRestaurant .service .blocPlats .plat {
   border-radius: 12px;
   height: 65px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  opacity: 0;
+  animation: apparition linear 1.2s;
+  opacity: 1;
 }
 body .unRestaurant .service .blocPlats .plat .platLib {
   cursor: pointer;
@@ -236,6 +240,36 @@ body .unRestaurant .service .blocPlats .plat .platChoisi .platCoche {
   transform: rotate(180deg);
   transition-duration: 1s;
 }
+body .unRestaurant .service .blocPlats .p1 {
+  animation-delay: 0.2s;
+}
+body .unRestaurant .service .blocPlats .p2 {
+  animation-delay: 0.4s;
+}
+body .unRestaurant .service .blocPlats .p3 {
+  animation-delay: 0.6s;
+}
+body .unRestaurant .service .blocPlats .p4 {
+  animation-delay: 0.8s;
+}
+body .unRestaurant .service .blocPlats .p5 {
+  animation-delay: 1s;
+}
+body .unRestaurant .service .blocPlats .p6 {
+  animation-delay: 1.2s;
+}
+body .unRestaurant .service .blocPlats .p7 {
+  animation-delay: 1.4s;
+}
+body .unRestaurant .service .blocPlats .p8 {
+  animation-delay: 1.6s;
+}
+body .unRestaurant .service .blocPlats .p9 {
+  animation-delay: 1.8s;
+}
+body .unRestaurant .service .blocPlats .p10 {
+  animation-delay: 2s;
+}
 body .unRestaurant .service .plat:hover .platChoisi {
   width: 20%;
   visibility: visible;
@@ -267,6 +301,17 @@ body .blocBouton .bouton {
 body .blocBouton .bouton:hover {
   background: linear-gradient(180deg, #ff93e1 8%, #a16be0 90%);
   box-shadow: 3px 3px 5px black;
+}
+
+@keyframes apparition {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=menusMf.css.map */
