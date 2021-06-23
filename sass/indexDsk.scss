@@ -67,17 +67,17 @@
      }
  }
 
+ h2 {
+      align-self: center;
+}
+
 #fonctionnement {
     display: flex;
     flex-direction: column;;
     padding: 10px;
     background-color: white;
     width: auto;
-    h2 {
-        align-self:center;
-     }
-    
-    
+      
     #blocFonctionnement {
         display: flex;
         flex-direction: row;
@@ -133,11 +133,10 @@
     justify-content: center;
     align-items: center;
     background-color: $fondGris;
-    h2 {
+    .titreH2 {
         margin-left:43%;
-        width: 100%;
-        align-self:center;
         margin-top: 35px;
+        width: 100%;
         margin-bottom: -10px;
     }
     a {

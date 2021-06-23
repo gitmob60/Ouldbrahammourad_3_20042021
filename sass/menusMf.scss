@@ -3,9 +3,7 @@
 @import 'generiqueMf';
 
 body {
-    margin-left: 2px;
-    margin-right: 2px;
-
+ 
 .pageMmenu {
     display: flex;
     flex-direction: column;
@@ -29,6 +27,9 @@ body {
     border-radius: 40px 40px 0 0;
     margin-top: -35px;
     background-color : $fondGris;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     .libelle {
         display: flex;
         flex-direction: row;
@@ -61,11 +62,21 @@ body {
             &:hover .coeurPlein {
                 display: -webkit-box;                            
                 display: -ms-flexbox;                            
-                display: flex;                            
+                display: flex; 
+                animation: colorieCoeur 3s;                               
             }                        
         }
     }
-    .service {
+    .entrees {
+            animation: apparition 0.5s;
+        }
+    .plats {
+            animation: apparition 2s;
+        }
+    .desserts {
+            animation: apparition 3.5s;
+        }
+    .service {        
         .nomService {
             font-family: $policeTexte, serif;
             text-transform: uppercase;
@@ -89,15 +100,9 @@ body {
                 border-radius: 12px;
                 height: 65px;
                 box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%); 
-                
-              
+                              
                 overflow: hidden;  
-                opacity: 0;             
-                animation: apparition linear 1.2s;
-                opacity: 1;
- 
-
-                
+                              
                 .platLib {
                     cursor: pointer;
                     display: flex;
@@ -105,7 +110,7 @@ body {
                     flex-wrap: nowrap;
                     overflow: hidden;
                     width: 100%;
-                    .platTexte {
+                    .platTexte {                       
                         display: flex;
                         flex-direction: column;  
                         width: 100%; 
@@ -166,41 +171,12 @@ body {
                         margin-bottom: -10px; ;
                         
                         transform: rotate(180deg);
-                        transition-duration: 1s;;                    
+                        transition-duration: 0.7s;;                    
                     }                 
                 }
                           
             } 
-            .p1 {
-                animation-delay: 0.2s;
-                }
-            .p2 {
-                animation-delay: 0.4s;
-            }
-            .p3 {
-                animation-delay: 0.6s;
-            }
-            .p4 {
-                animation-delay: 0.8s;
-            }
-            .p5 {
-                animation-delay: 1s;
-            }
-            .p6 {
-                animation-delay: 1.2s;
-            }
-            .p7 {
-                animation-delay: 1.4s;
-            }
-            .p8 {
-                animation-delay: 1.6s;
-            }
-            .p9 {
-                animation-delay: 1.8s;
-            } 
-            .p10 {
-                animation-delay: 2s;
-            }           
+         
         }
         .plat:hover  .platChoisi {
             width: 20%;
@@ -243,7 +219,12 @@ body {
 }
 
 @keyframes apparition {
-    from { transform: translateY(50px); opacity: 0;}
+    from { transform: translateY(150px); opacity: 0;}
     to { transform: translateY(0); opacity: 1;} 
+}
+
+@keyframes colorieCoeur {
+    from { opacity: 0;}
+    to {  opacity: 1;} 
 }
 

@@ -68,17 +68,21 @@
      }
  }
 
+ h2 {
+      align-self: start;
+      margin-left: 20px;
+      margin-top: 35px;
+}
+
+
+
 #fonctionnement {
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: white;
     width: auto;
-    h2 {
-        margin-left: 20px;
-     }
-    
-    
+     
     #blocFonctionnement {
         display: flex;
         flex-direction: column;
@@ -142,11 +146,8 @@
     justify-content: center;
     align-items: center;
     background-color: $fondGris;
-    h2 {
-        align-self: start;
-        margin-left: 20px;
-        margin-top: 35px;
-        margin-bottom: -10px;
+    .titreH2 {
+         margin-bottom: -10px;
     }
     a {
         text-decoration: none;
@@ -225,7 +226,7 @@
                     &:hover .coeurPlein {
                         display: -webkit-box;                            
                         display: -ms-flexbox;                            
-                        display: flex;                            
+                        display: flex;  
                     }                        
                 }
                 

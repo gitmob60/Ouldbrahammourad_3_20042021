@@ -239,15 +239,16 @@ footer .navigation li a .fas {
   box-shadow: 3px 3px 5px black;
 }
 
+h2 {
+  align-self: center;
+}
+
 #fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 10px;
   background-color: white;
   width: auto;
-}
-#fonctionnement h2 {
-  align-self: center;
 }
 #fonctionnement #blocFonctionnement {
   display: flex;
@@ -304,11 +305,10 @@ footer .navigation li a .fas {
   align-items: center;
   background-color: #F6F6F6;
 }
-#restaurants h2 {
+#restaurants .titreH2 {
   margin-left: 43%;
-  width: 100%;
-  align-self: center;
   margin-top: 35px;
+  width: 100%;
   margin-bottom: -10px;
 }
 #restaurants a {
